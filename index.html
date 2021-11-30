@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/a9/66/ff/a966ff1edb4027754b154aa634a8cd1e.png"
+    />
+    <title>Ngoc Linh</title>
+
+    <!-- Font nghệ nghệ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Playfair+Display:wght@900&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>nglinhh</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#news">News</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button>Buy Now</button>
+      </nav>
+
+      <div class="bar" onclick="showNavPhone()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-phone" id="nav-phone">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>New</li>
+          <li>Contact</li>
+        </ul>
+        <button>Buy Now</button>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fas fa-basketball-ball"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>
+        <div class="bar2" onclick="closeNavPhone()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="background" id="particles-js">
+      <!-- BEM: giảm sự trùng class -->
+      <div class="wrapper">
+        <div class="background__content">
+          <div class="background__content__name">
+            <h1>Ngoc Linh</h1>
+          </div>
+          <div class="background__content__skill">
+            <ul>
+              <li>Frontend Developer</li>
+              <li>Backend Developer</li>
+              <li>Fullstack Developer</li>
+            </ul>
+          </div>
+          <div class="background__content__from">based in HCMC</div>
+          <div class="background__content__button">
+            <a target="blank" href="https://www.facebook.com/ngoc.linh.50552/">
+              <i class="fab fa-facebook-f"></i>
+              <span>Connect to me</span>
+            </a>
+            <a target="blank" href="https://www.instagram.com/nglinnhhhh/">
+              <i class="fab fa-instagram"></i>
+              <span>Connect to me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div id="about" class="section1">
+      <div class="section1__about">
+        <div class="container">
+          <div class="wrapper">
+            <div
+              class="section1__about__left"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <img src="./image/about.jpg" alt="about" />
+            </div>
+            <div
+              class="section1__about__right"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div class="text-title">About me</div>
+              <h3 class="text-heading">
+                Creative Independent Web Developer based in USA
+              </h3>
+              <div
+                class="text-discription"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                I'm web designer, and I'm very passionate and dedicated to my
+                work. With 20 years experience as a professional web developer,
+                I have acquired the skills and knowledge necessary to make your
+                project a success. I enjoy every step of the design process,
+                from discussion and collaboration.
+              </div>
+              <div class="btn" data-aos="fade-up" data-aos-duration="1200">
+                Download CV
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div id="portfolio" class="section2">
+      <div class="section2__portfolio">
+        <div class="container">
+          <div class="section2__portfolio__header">
+            <div class="section2__portfolio__header__left">
+              <div class="text-title">Portfolio</div>
+              <h3 class="text-heading">Creative Portfolio</h3>
+            </div>
+            <div class="section2__portfolio__header__right">
+              <ul class="list">
+                <li>All</li>
+                <li>Design</li>
+                <li>Branding</li>
+                <li>Photography</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section2__portfolio__gallery">
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/about.jpg">
+                      <img src="./image/1.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="mobile-title">
+                    <h3>
+                      <a
+                        href="https://www.instagram.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >My Story</a
+                      >
+                    </h3>
+                    <span>Design</span>
+                  </div>
+                </div>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/about.jpg">
+                      <img src="./image/2.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="mobile-title">
+                    <h3>
+                      <a
+                        href="https://www.instagram.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Design Trend</a
+                      >
+                    </h3>
+                    <span>Branding</span>
+                  </div>
+                </div>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/about.jpg">
+                      <img src="./image/3.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="mobile-title">
+                    <h3>
+                      <a
+                        href="https://www.instagram.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Ice Cream</a
+                      >
+                    </h3>
+                    <span>Photography</span>
+                  </div>
+                </div>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/about.jpg">
+                      <img src="./image/4.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="mobile-title">
+                    <h3>
+                      <a
+                        href="https://www.instagram.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Shane Design</a
+                      >
+                    </h3>
+                    <span>Design</span>
+                  </div>
+                </div>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/about.jpg">
+                      <img src="./image/5.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="mobile-title">
+                    <h3>
+                      <a
+                        href="https://www.instagram.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Sweet Cherry</a
+                      >
+                    </h3>
+                    <span>Photography</span>
+                  </div>
+                </div>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/about.jpg">
+                      <img src="./image/6.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="mobile-title">
+                    <h3>
+                      <a
+                        href="https://www.instagram.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Behance Shoot</a
+                      >
+                    </h3>
+                    <span>Branding</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section3">
+      <div class="section3__skills">
+        <div class="container">
+          <div class="wrapper">
+            <div class="left" data-aos="fade-right" data-aos-duration="1200">
+              <h3 class="text-heading">
+                I have high skills in developing and programming
+              </h3>
+              <div class="text-discription">
+                I am working on a professional, visually sophisticated and
+                technologically proficient, responsive and multi-functional
+                personal portfolio template Shane.
+              </div>
+            </div>
+            <div class="right" data-aos="fade-right" data-aos-duration="1200">
+              <div class="right__wrapper">
+                <div class="inner">
+                  <span>
+                    <span class="label">Web Development</span>
+                    <span class="number1">95%</span>
+                  </span>
+                  <div class="progress">
+                    <div class="bar">
+                      <div class="bar__progress" style="width: 95%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner">
+                  <span>
+                    <span class="label">Brand Identity</span>
+                    <span class="number2">80%</span>
+                  </span>
+                  <div class="progress">
+                    <div class="bar">
+                      <div class="bar__progress" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner">
+                  <span>
+                    <span class="label">Logo Design</span>
+                    <span class="number3">90%</span>
+                  </span>
+                  <div class="progress">
+                    <div class="bar">
+                      <div class="bar__progress" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section4">
+      <div class="section4__video">
+        <div class="section4__video__background">
+          <img class="video" src="./image/video.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="section4__video__content">
+          <div data-aos="fade-up" data-aos-duration="1200">
+            <a
+              class="play-btn"
+              data-fancybox=""
+              href="https://www.youtube.com/watch?time_continue=1&v=ZOoVOfieAF8&feature=emb_title"
+              data-width="10"
+              data-height="600"
+            >
+              <i class="fas fa-play"></i>
+            </a>
+          </div>
+          <h3
+            class="text-heading"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="50"
+          >
+            I am delivering beautiful digital <br />
+            products for my clients
+          </h3>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+            <button class="btn-white">Watch Video</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section5">
+      <div class="section5__brand">
+        <div class="container">
+          <div class="section5__brand__inner">
+            <ul>
+              <li class="item">
+                <img src="./image/item1.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item2.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item3.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item4.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item5.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item6.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item7.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item8.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item1.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item2.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item3.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item4.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item5.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item6.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item7.png" alt="" />
+              </li>
+              <li class="item">
+                <img src="./image/item8.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="section6">
+      <div class="section6__testimonials">
+        <div class="container">
+          <div class="wrapper">
+            <div
+              class="section6__testimonials__left"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
+              <div class="text-title">Testimonials</div>
+              <h3 class="text-heading">
+                What clients say about my portfolio template
+              </h3>
+            </div>
+            <div
+              class="section6__testimonials__right"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
+              <ul>
+                <!-- <div class="slider">
+                  <div class="slider_list"> -->
+                <li>
+                  <div class="text">
+                    <p class="text-discription">
+                      Really the Code, Support, and design are awesome and its
+                      good support they are giving. They give an instant
+                      solution to our needs. Really awesome. I will strongly
+                      recommend to my friends. Great template, even better
+                      service!
+                    </p>
+                    <div class="bottom">
+                      <img src="./image/author1.jpg" alt="" />
+                      <div
+                        class="author"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        <h3 class="name">Bauen Fernandes</h3>
+                        <h3 class="job">Web Developer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="text">
+                    <p class="text-discription">
+                      We were looking for a logo with a touch of modernism. Arlo
+                      grasped our needs and produced a stunning design. Awesome
+                      to work with Arlo. Incredibly organized, easy to
+                      communicate with, responsive with next iterations.
+                    </p>
+                    <div class="bottom">
+                      <img src="./image/about.jpg" alt="" />
+                      <div
+                        class="author"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        <h3 class="name">Justin Bieber</h3>
+                        <h3 class="job">Photographer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="text">
+                    <p class="text-discription">
+                      I purchased the theme a few weeks ago. I had some issues
+                      with the theme, I asked customer support to help me with
+                      and they were helpful and kind to help me with all my
+                      problems. I definitely recommend this theme to everyone.
+                    </p>
+                    <div class="bottom">
+                      <img src="./image/author3.jpg" alt="" />
+                      <div
+                        class="author"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        <h3 class="name">Teodor Federico</h3>
+                        <h3 class="job">Freelancer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="text">
+                    <p class="text-discription">
+                      Really the Code, Support, and design are awesome and its
+                      good support they are giving. They give an instant
+                      solution to our needs. Really awesome. I will strongly
+                      recommend to my friends. Great template, even better
+                      service!
+                    </p>
+                    <div class="bottom">
+                      <img src="./image/author1.jpg" alt="" />
+                      <div
+                        class="author"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        <h3 class="name">Bauen Fernandes</h3>
+                        <h3 class="job">Web Developer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="text">
+                    <p class="text-discription">
+                      We were looking for a logo with a touch of modernism. Arlo
+                      grasped our needs and produced a stunning design. Awesome
+                      to work with Arlo. Incredibly organized, easy to
+                      communicate with, responsive with next iterations.
+                    </p>
+                    <div class="bottom">
+                      <img src="./image/about.jpg" alt="" />
+                      <div
+                        class="author"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        <h3 class="name">Justin Bieber</h3>
+                        <h3 class="job">Photographer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="text">
+                    <p class="text-discription">
+                      I purchased the theme a few weeks ago. I had some issues
+                      with the theme, I asked customer support to help me with
+                      and they were helpful and kind to help me with all my
+                      problems. I definitely recommend this theme to everyone.
+                    </p>
+                    <div class="bottom">
+                      <img src="./image/author3.jpg" alt="" />
+                      <div
+                        class="author"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                      >
+                        <h3 class="name">Teodor Federico</h3>
+                        <h3 class="job">Freelancer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- </div>
+                </div> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 7  -->
+    <div class="section7">
+      <div class="section7__news">
+        <div class="container">
+          <div class="section7__news__header">
+            <div class="text-title">News</div>
+            <h3 class="text-heading">Latest News</h3>
+          </div>
+          <div class="section7__news__gallery">
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/new1.jpg">
+                      <img src="./image/new1.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="bottom">
+                    <div class="text-heading">
+                      Developers watch out for these burnout symptoms
+                    </div>
+                    <p class="text-discription">
+                      By
+                      <a href="#">Alex Watson </a>
+                      <span>/ 20 May 2020</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/new2.jpg">
+                      <img src="./image/new2.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="bottom">
+                    <div class="text-heading">
+                      How to be appreciated for your hard work as a developer
+                    </div>
+                    <p class="text-discription">
+                      By
+                      <a href="#">Brook Kennedy</a>
+                      <span> / 07 April 2020</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="1200">
+                <div class="inner">
+                  <div class="entry">
+                    <a href="./image/new3.jpg">
+                      <img src="./image/new3.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="bottom">
+                    <div class="text-heading">
+                      How designers and developers can collaborate better
+                    </div>
+                    <p class="text-discription">
+                      By <a href="#">Paola Atkins / </a>
+                      <span>02 MARCH 2020</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div class="section8">
+      <div class="section8__work">
+        <div class="paper">
+          <img
+            src="http://shanereact.ibthemespro.com/img/svg/paper.svg"
+            alt=""
+          />
+        </div>
+        <div class="background__bottom">
+          <img src="./image/last.jpg" alt="" />
+          <div class="overlay"></div>
+          <div class="background__bottom__content">
+            <h3
+              class="text-heading"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              Let's work together!
+            </h3>
+            <button class="btn-wh" data-aos="fade-up" data-aos-duration="1200">
+              Make an enquiry
+            </button>
+          </div>
+        </div>
+        <div class="background__footer">
+          <img src="./image/đen.jpg" alt="" />
+          <div class="background__footer__content">
+            <p class="text-discription">
+              © 2021 by
+              <a
+                href="https://themeforest.net/user/ib-themes"
+                target="_blank"
+                rel="noreferrer"
+                >ib-themes.</a
+              >
+              All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+      function showNavPhone() {
+        document.getElementById("nav-phone").style.transform = "none";
+      }
+    </script>
+
+    <script>
+      function closeNavPhone() {
+        document.getElementById("nav-phone").style.transform =
+          "translateX(-100%)";
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/particle.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 166) {
+          $(".header").css("background-color", "#000");
+          console.log($(".header"));
+        } else {
+          $(".header").css("background-color", "rgba(0,0,0,0)");
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+  SCSS
+  SASS
+  LESS
+ -->

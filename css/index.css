@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 0;
+  z-index: 999;
+}
+
+header nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+header nav li {
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+}
+
+header nav button {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+header nav button:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  transform: translateY(-3px);
+}
+
+header li:hover a::after {
+  width: 100%;
+}
+
+header li:hover a::before {
+  width: 100%;
+  transform: translateX(0%);
+}
+
+header li a::before {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+  margin-top: 0.7px;
+  transform: translateX(100%);
+}
+
+header li a::after {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 0;
+  transition: all 0.3s;
+  margin-top: 0.7px;
+}
+
+.line {
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: all 0.5s;
+}
+
+.bar {
+  height: fit-content;
+  display: none;
+}
+
+.bar i {
+  color: #333;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.bar2 {
+  position: absolute;
+  height: fit-content;
+  display: none;
+  top: 20px;
+  right: 20px;
+}
+
+.bar2 i {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-phone {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: all 1s;
+  z-index: 9999;
+}
+
+.nav-phone ul li {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.nav-phone button {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  padding: 15px 40px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-phone button:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  transform: translateY(-5px);
+}
+
+.nav-phone .icon i {
+  font-size: 25px;
+  padding-left: 30px;
+  margin-top: 200px;
+  cursor: pointer;
+}
+
+/* coding convention */
+/* SASS/SCSS: CSS Preporcessor */
+/* 
+    CSS Preporcessor: bộ tiền xử lý CSS
+    Nguyên tắc BEM
+  */
+
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none !important;
+  }
+  header {
+    background-color: #fff !important;
+    padding: 5px 0;
+  }
+  .bar {
+    display: block;
+  }
+  .bar2 {
+    display: block;
+  }
+  header .logo h1 {
+    color: #333 !important;
+    padding-right: 150px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  nav {
+    display: none !important;
+  }
+  header {
+    background-color: #fff !important;
+    padding: 5px 0;
+    width: 380px;
+  }
+  .bar {
+    display: block;
+    padding-right: 0px;
+  }
+  header .logo h1 {
+    color: #333 !important;
+    padding-right: 0px;
+  }
+  .nav-phone ul li {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .nav-phone button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .nav-phone .icon i {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-phone ul li {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .nav-phone button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .nav-phone .icon i {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  header {
+    background-color: #fff !important;
+    padding: 5px 0;
+    width: 280px;
+  }
+}

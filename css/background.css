@@ -1,0 +1,166 @@
+.background {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(http://shanereact.ibthemespro.com/img/slider/3.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background__content {
+  background-color: transparent;
+  -webkit-transform: translate(150px);
+          transform: translate(150px);
+  color: #fff;
+}
+
+.background__content > * {
+  width: 600px;
+}
+
+.background__content__name {
+  font-size: 50px;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  color: transparent;
+  font-family: "Montserrat";
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.background__content__skill ul {
+  list-style: none;
+  height: 80px;
+  overflow: hidden;
+}
+
+.background__content__skill ul li {
+  width: 600px;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 90px;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.background__content__from {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.background__content__button {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.background__content__button a {
+  margin: 0 10px;
+  border: 2px solid #fff;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.background__content__button a i {
+  margin-right: 22px;
+  margin-left: 2px;
+}
+
+.background__content__button a:hover {
+  width: 230px;
+  color: #15a2fa;
+  border-color: #15a2fa;
+  background-color: #fff;
+}
+
+.background__content__button a span {
+  min-width: 200px;
+  display: block;
+}
+
+@-webkit-keyframes slide {
+  25% {
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+  50% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px);
+  }
+  75% {
+    -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
+  }
+  100% {
+    -webkit-transform: translateY(-360px);
+            transform: translateY(-360px);
+  }
+}
+
+@keyframes slide {
+  25% {
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+  50% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px);
+  }
+  75% {
+    -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
+  }
+  100% {
+    -webkit-transform: translateY(-360px);
+            transform: translateY(-360px);
+  }
+}
+
+header {
+  z-index: 100;
+}
+
+body {
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=background.css.map */
